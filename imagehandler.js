@@ -17,17 +17,17 @@ var original_images = [
     "./img/original/11.jpg",
     "./img/original/12.jpg",
     "./img/original/13.jpg",
-    "./img/original/14.jpg",
-    "./img/original/15.jpg",
-    "./img/original/16.jpg",
-    "./img/original/17.jpg",
-    "./img/original/18.jpg",
-    "./img/original/19.jpg",
-    "./img/original/20.jpg",
-    "./img/original/21.jpg",
-    "./img/original/22.jpg",
-    "./img/original/23.jpg",
-    "./img/original/24.jpg",
+    // "./img/original/14.jpg",
+    // "./img/original/15.jpg",
+    // "./img/original/16.jpg",
+    // "./img/original/17.jpg",
+    // "./img/original/18.jpg",
+    // "./img/original/19.jpg",
+    // "./img/original/20.jpg",
+    // "./img/original/21.jpg",
+    // "./img/original/22.jpg",
+    // "./img/original/23.jpg",
+    // "./img/original/24.jpg",
 ];
 
 const my_images = [
@@ -44,17 +44,17 @@ const my_images = [
     "./img/prev/11.jpg",
     "./img/prev/12.jpg",
     "./img/prev/13.jpg",
-    "./img/prev/14.jpg",
-    "./img/prev/15.jpg",
-    "./img/prev/16.jpg",
-    "./img/prev/17.jpg",
-    "./img/prev/18.jpg",
-    "./img/prev/19.jpg",
-    "./img/prev/20.jpg",
-    "./img/prev/21.jpg",
-    "./img/prev/22.jpg",
-    "./img/prev/23.jpg",
-    "./img/prev/24.jpg",
+    // "./img/prev/14.jpg",
+    // "./img/prev/15.jpg",
+    // "./img/prev/16.jpg",
+    // "./img/prev/17.jpg",
+    // "./img/prev/18.jpg",
+    // "./img/prev/19.jpg",
+    // "./img/prev/20.jpg",
+    // "./img/prev/21.jpg",
+    // "./img/prev/22.jpg",
+    // "./img/prev/23.jpg",
+    // "./img/prev/24.jpg",
 ];
 
 loadImages();
@@ -131,8 +131,25 @@ function loadImages() {
     });
 }      
 
+function loadImages2() {
+    const button = document.getElementById('show_btn');
+    const displayStyle = window.getComputedStyle(button).display;
+
+    let show_all = false;
+    if (displayStyle === 'none') {
+        show_all = true;
+    }
+    
+    my_images.forEach((src, index) => {
+        if(index >= 9) {
+            const galleryItem = createGalleryItem(src, index);
+            gallery.appendChild(galleryItem);
+        } 
+    });
+}      
+
 function show_more_img() {
     const button = document.getElementById('show_btn');
     button.style.display = "none";
-    loadImages();
+    loadImages2();
 }
