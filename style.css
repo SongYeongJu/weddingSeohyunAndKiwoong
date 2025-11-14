@@ -691,3 +691,71 @@ body {
     user-select: none;
 }
 
+.navigation {
+    position: relative;
+    text-align:center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navigation ul li {
+    float: left;   
+    margin-right:30px;
+    list-style: none;
+}
+
+.navigation ul li:last-child {
+    margin-right:0;
+}
+
+
+.navigation ul li img {
+    width:15px;
+    vertical-align:middle;
+    padding-right:5px;
+
+}
+.navigation ul li a {
+    font-family: "Noto Sans Kr";
+    color: #666;
+    font-size: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.location_button_box {
+    text-align:center;
+    margin:12px 0 20px;
+    font-size:0;
+}
+
+.location_button_box a {
+    display:inline-block;
+    width:90px;
+    height: 38px; 
+    line-height: 38px;
+    border:1px solid #ddd;
+    border-radius:20px;
+    text-indent:18px;
+    font-family:"Noto Sans Kr";
+    font-size:15px;
+    color:#666;
+    font-weight:bold;
+    letter-spacing:-0.38px;
+    text-decoration: none;
+
+}
+.location_button_box a:not(:last-child) {
+    margin-right:12px;
+
+}
+.location_button_box .map_btn {
+    background:url(https://static.barunsoncard.com/barunsonmcard/invitation/icon/ico_16_map.svg) no-repeat 18px 11px;
+}
+.location_button_box .call_btn {
+    background:url(https://static.barunsoncard.com/barunsonmcard/invitation/icon/ico_16_call.svg) no-repeat 18px 11px;
+}
