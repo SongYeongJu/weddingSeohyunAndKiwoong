@@ -746,7 +746,7 @@ body {
     color:#666;
     font-weight:bold;
     letter-spacing:-0.38px;
-    text-decoration: none;
+     text-decoration: none;
 
 }
 .location_button_box a:not(:last-child) {
@@ -758,4 +758,12 @@ body {
 }
 .location_button_box .call_btn {
     background:url(https://static.barunsoncard.com/barunsonmcard/invitation/icon/ico_16_call.svg) no-repeat 18px 11px;
+}
+
+.invitaton_header {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Gowun Batang", serif;
+    color: #fd9f28;
 }
