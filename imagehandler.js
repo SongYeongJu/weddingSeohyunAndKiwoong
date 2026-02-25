@@ -20,8 +20,8 @@ var original_images = [
     "./img/original/14.jpg",
     "./img/original/15.jpg",
     "./img/original/16.jpg",
-    // "./img/original/17.jpg",
-    // "./img/original/18.jpg",
+    "./img/original/17.jpg",
+    "./img/original/18.jpg",
     // "./img/original/19.jpg",
     // "./img/original/20.jpg",
     // "./img/original/21.jpg",
@@ -47,8 +47,8 @@ const my_images = [
     "./img/prev/14.jpg",
     "./img/prev/15.jpg",
     "./img/prev/16.jpg",
-    // "./img/prev/17.jpg",
-    // "./img/prev/18.jpg",
+    "./img/prev/17.jpg",
+    "./img/prev/18.jpg",
     // "./img/prev/19.jpg",
     // "./img/prev/20.jpg",
     // "./img/prev/21.jpg",
@@ -64,7 +64,7 @@ function openModal(index) {
     modalImg = document.getElementById('modalImg');
     // images = document.querySelectorAll('.gallery img');
     // modalImg.src = images[index].src;
-    modalImg.src = my_images[index];
+    modalImg.src = original_images[index];
     currentIndex = index;
 }
 
@@ -75,11 +75,11 @@ function closeModal() {
 function changeImage(direction) {
     currentIndex += direction;
     if (currentIndex < 0) {
-        currentIndex = my_images.length - 1;
-    } else if (currentIndex >= my_images.length) {
+        currentIndex = original_images.length - 1;
+    } else if (currentIndex >= original_images.length) {
         currentIndex = 0;
     }
-    modalImg.src = my_images[currentIndex];
+    modalImg.src = original_images[currentIndex];
 
     // currentIndex += direction;
     // if (currentIndex < 0) {
