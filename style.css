@@ -573,7 +573,7 @@ body {
     font-weight: lighter;
     text-align: left;
     font-family: "Gowun Batang", serif;
-    color: #8c8c8c;
+    color: #353535;
     padding : 0% 5%
 }
 
@@ -766,4 +766,9 @@ body {
     font-weight: bold;
     font-family: "Gowun Batang", serif;
     color: #fd9f28;
+}
+
+.highlight {
+    color: #fd9f28;
+    font-weight: bold; /* 선택사항 */
 }
